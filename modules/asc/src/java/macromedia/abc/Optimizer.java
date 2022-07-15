@@ -132,8 +132,8 @@ public class Optimizer
             {
                 encoder.disableDebugging();
             }
-            // always remove metadata...
-            encoder.removeMetadata();
+            // [RUFFLE] Keep metadata
+            //encoder.removeMetadata();
             encoder.configure(decoders);
         }
         catch (Throwable ex)
